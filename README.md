@@ -18,3 +18,11 @@
 2. 최종 loss를 계산할 때 모델의 중간 부분의 loss값을 포함
 ![image](https://user-images.githubusercontent.com/74392995/125410586-ff06e000-e3f7-11eb-846a-df67b0894225.png)
 # Inception V2
+## 더 작은 필터 사이즈
+### 문제점
+1. representational bottleneck : 차원을 줄일수록 정보 손실이 커지는 문제
+### 아이디어
+1.5x5 convolution을 두개의 3x3 convolution으로 
+![image](https://user-images.githubusercontent.com/74392995/125412676-16df6380-e3fa-11eb-9a5d-c664fffe07ff.png)
+2. nxn을 1xn과 nx1로 쪼개기
+![image](https://user-images.githubusercontent.com/74392995/125413622-8309b21d-d46c-4be6-b148-04f313ec1fb4.png)
