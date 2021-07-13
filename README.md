@@ -27,7 +27,7 @@
 2. nxn을 1xn과 nx1로 쪼개기
 ![image](https://user-images.githubusercontent.com/74392995/125414699-fd24bdfa-ecab-4f9a-9da9-1b871df7e1d3.png)
 3. nxn을 1xn과 nx1로 쪼개기 + Wider
-![image](https://user-images.githubusercontent.com/74392995/125414889-8e0a56ff-ad47-4c25-b2df-5b59dd02b739.png)
+![image](https://user-images.githubusercontent.com/74392995/125415113-b2775fb5-f6a1-4737-bbe9-c510a1975aeb.png)
 # Inception V3
 ## auxiliary classifiers
 ### 문제점
