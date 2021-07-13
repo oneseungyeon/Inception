@@ -22,11 +22,12 @@
 ### 문제점
 1. representational bottleneck : 차원을 줄일수록 정보 손실이 커지는 문제 발생
 ### 아이디어
-1.5x5 convolution을 두개의 3x3 convolution으로 
+1. 5x5 convolution을 두개의 3x3 convolution으로 
 ![image](https://user-images.githubusercontent.com/74392995/125412676-16df6380-e3fa-11eb-9a5d-c664fffe07ff.png)
 2. nxn을 1xn과 nx1로 쪼개기
 ![image](https://user-images.githubusercontent.com/74392995/125414699-fd24bdfa-ecab-4f9a-9da9-1b871df7e1d3.png)
 3. nxn을 1xn과 nx1로 쪼개기 + Wider
+
 ![image](https://user-images.githubusercontent.com/74392995/125415113-b2775fb5-f6a1-4737-bbe9-c510a1975aeb.png)
 # Inception V3
 ## auxiliary classifiers
