@@ -6,7 +6,7 @@
 ### 아이디어
 1. 다양한 필터 사이즈(1x1, 3x3, 5x5)를 사용하자! -> 더 "깊게"가 아닌 더 "넓게"
 ![image](https://user-images.githubusercontent.com/74392995/125408465-e4cc0280-e3f5-11eb-9975-593b0a94bf00.png)
-2. 1x1 필터 사용 : 입력 채널의 수를 줄일 수 있으며 5x5 필터보다 덜 복잡
+2. 1x1 필터 사용 : 입력 채널의 수를 줄일 수 있으며 cov 연산 후 추가되는 ReLU를 통해 비선형적 특징을 더 추가 가능
 ![image](https://user-images.githubusercontent.com/74392995/125408812-40968b80-e3f6-11eb-80be-d34bdde74492.png)
 ## 더 깊은 층
 ### 배경
