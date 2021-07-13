@@ -20,7 +20,7 @@
 # Inception V2
 ## 더 작은 필터 사이즈
 ### 문제점
-1. representational bottleneck : 차원을 줄일수록 정보 손실이 커지는 문제
+1. representational bottleneck : 차원을 줄일수록 정보 손실이 커지는 문제 발생
 ### 아이디어
 1.5x5 convolution을 두개의 3x3 convolution으로 
 ![image](https://user-images.githubusercontent.com/74392995/125412676-16df6380-e3fa-11eb-9a5d-c664fffe07ff.png)
@@ -31,6 +31,16 @@
 # Inception V3
 ## auxiliary classifiers
 ### 문제점
-1.
+1. auxiliary classifiers은 학습초기에 수렴성을 개선시키지 못함
 ### 아이디어
-1.
+1. RMSProp optimizer : Momentum optimizer에서 RMSProp optimizer로 바꿈
+2. Factorized 7x7 convolutions
+3. BatchNorm in the Auxillary Classifiers
+4. Label Smoothing : label 을 0또는 1이 아니라 smooth 하게 부여하는 것, 미스라벨링의 오차를 줄여줌
+# Inception V4
+## auxiliary classifiers
+### 문제점
+1. 모듈이 너무 복잡해서 형식화(uniform)할 필요가 있음
+### 아이디어
+![image](https://user-images.githubusercontent.com/74392995/125422217-6b07a81c-9684-4cc1-a949-76924aefd592.png)
+
