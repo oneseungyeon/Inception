@@ -13,7 +13,7 @@
 1. 층을 깊게 쌓을수록 파라미터 수가 증가해 계산 복잡도가 증가하며 오버피팅의 우려가 생김
 2. 층이 깊어질수록 vanishing gradient problem 발생
 ### 아이디어
-1. two auxiliary classifiers
+1. two auxiliary classifiers : 중간 layer에 auxiliary classifier를 추가하여, 중간중간에 결과를 출력해 추가적인 역전파를 일으켜 gradient가 전달될 수 있게끔 하면서도 정규화 효과가 나타나도록 함
 ![image](https://user-images.githubusercontent.com/74392995/125410471-df6fb780-e3f7-11eb-8cb3-9bb8196803ad.png)
 2. 최종 loss를 계산할 때 모델의 중간 부분의 loss값을 포함
 ![image](https://user-images.githubusercontent.com/74392995/125410586-ff06e000-e3f7-11eb-846a-df67b0894225.png)
